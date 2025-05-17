@@ -1,35 +1,78 @@
 
-<html lang="uk">
+<html>
+
 <head>
   <meta charset="UTF-8">
-  <title>Енциклопедія Світу | Fantasy Hackathon</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <title>Світ Елінор</title>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  </head>
 <body>
-  <div class="container">
-    <h1>Енциклопедія Світу</h1>
 
-    <div class="entry">
-      <h2>Ельдрін — Місто Магії</h2>
-      <p>Це древнє місто стоїть серед туманних гір, приховане чарами від сторонніх. Тут народжуються наймогутніші маги світу Ельтарії.</p>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7mAnYFOM8ZpW1rqUuQU18ICRih5extsi-OA&s" width="350px" height="250px"
-    </div>
+<header>
+  <h1>Світ Елінор</h1>
+  <p>Де магія живе у кожному подиху...</p>
+</header>
 
-    <div class="entry">
-      <h2>Орден Срібного Крила</h2>
-      <p>Таємниче братство, яке охороняє баланс між світлом і тінню. Їх символ — срібний дракон, що обвиває кристал часу.</p>
-      <img src="https://learn.logikaschool.com/uploads/student/3398841/6815ffc44d07c.jpg" width="350px" height="250px"
-    </div>
+<nav>
+  <a href="#world">Світ</a>
+  <a href="#heroes">Герої</a>
+  <a href="#story">Історія</a>
+  <a href="#contact">Контакт</a>
+</nav>
 
-    <div class="entry">
-      <h2>Темний Ліс Арха</h2>
-      <p>Простір, у якому час тече інакше. Кажуть, у його серці росте дерево, що бачило початок світу...</p>
-      <img src="https://learn.logikaschool.com/uploads/student/3398841/6815fe47de230.jpg" width="350px" height="250px"
-    </div><div class="navigation">
+<section id="world">
+  <h2>🌍 Про Світ</h2>
+  <div class="card">
+    <p>Елінор — містичний континент, поділений на чотири землі: королівство Аркалія, піщані землі Сах-Нар, темні ліси Драель і льодові вершини Хелдріму. Тут існують магія, дракони та забуті храми древніх богів.</p>
+  </div>
+</section>
+
+<section id="heroes">
+  <h2>🧝 Герої Елінору</h2>
+  <div class="card">
+    <p><strong>Елінар</strong> — маг Світла, який несе надію.<br>
+       <strong>Кіра з Лісу</strong> — лучниця-друїдка, захисниця природи.<br>
+       <strong>Врагнор</strong> — воїн Ордену Тіней, шукає помсти за зруйновану рідню.</p>
+  </div>
+</section>
+
+
+
+<footer>
+  &copy; 2025 Світ Елінор | Створено для Хакатону ✨
+</footer>
+<section id="contact">
+  <h2>💌 Зв'язатися з нами</h2>
+  <div class="card">
+    <form id="register-form">
+      <input type="text" placeholder="Твоє ім'я" required><br>
+      <input type="email" placeholder="Електронна пошта" required><br>
+      <textarea rows="4" placeholder="Повідомлення"></textarea><br>
+      <button type="submit">Надіслати</button>
+    </form>
+    <p id="success-message" style="color: lightgreen; font-weight: bold; display: none; margin-top: 20px;">
+      ✅ Ви успішно зареєстровані!
+    </p>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('register-form');
+  const message = document.getElementById('success-message');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // щоб не перезавантажувалась сторінка
+    message.style.display = 'block'; // показуємо повідомлення
+    form.reset(); // очищаємо форму
+  });
+</script>
+<div>
+  <div class="navigation">
   <a href="page2.html">← Назад</a> |
-  <span>Сторінка 2</span> |
-  <a href="https://tanyanm.github.io/storinka3/">Далі →</a>
+  <span>Сторінка 1</span> |
+  <a href="page4.html">Далі →</a>
 </div>
-    <div>
+</div>
 </body>
+
 </html>
