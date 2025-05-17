@@ -1,0 +1,116 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'MedievalSharp', cursive;
+      background: linear-gradient(to bottom, #1a1a2e, #2e1437);
+      color: #f9f5e3;
+    }
+
+    header {
+      background-image: url('https://images.unsplash.com/photo-1601297204088-6c0cdd377a3b');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.5em;
+    }
+
+    nav {
+      background-color: #2d1b3a;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #f0d29d;
+      text-decoration: none;
+      margin: 0 20px;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd369;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #c9a66b;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+    h2 {
+      color: #ffe6b0;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #1c1025;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #3e2a4d;
+      color: #f9f5e3;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #c9a66b;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #e3c07a;
+    }
+    .navigation {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2em;
+}
+
+.navigation span {
+  color: #f0f0f0;
+  font-weight: bold;
+}
